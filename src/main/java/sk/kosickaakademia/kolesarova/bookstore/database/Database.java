@@ -12,7 +12,7 @@ public class Database {
     public Connection getConnection(){
         try {
             Properties properties=new Properties();
-            InputStream loader=getClass().getClassLoader().getResourceAsStream("database.properties");
+            InputStream loader=getClass().getClassLoader().getResourceAsStream("db.properties");
             properties.load(loader);
             String url=properties.getProperty("url");
             String username=properties.getProperty("username");
